@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:kao_rou/views/account/index.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -29,14 +31,14 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int selectedIndex = 1;
+  int selectedIndex = 0;
 
   @override
   Widget build(BuildContext context) {
     Widget page;
     switch (selectedIndex) {
       case 0:
-        page = const Placeholder();
+        page = AccountIndexPage();
         break;
       case 1:
         page = const Placeholder();
